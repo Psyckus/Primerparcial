@@ -1,0 +1,733 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Parcial 1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Parcial 1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\meanmenu.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\meanmenu.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\base\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\base\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\base\\_typography.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\base\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\base\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\base\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\common\\_common.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\common\\_common.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\common\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\common\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\common\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\common\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\common\\_hover.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\common\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\pages\\_404.css",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\pages\\_404.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\pages\\_404.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\pages\\_404.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\pages\\_about.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\pages\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\pages\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\pages\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\pages\\_shop.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\pages\\_shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\prepros-6.config",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\prepros-6.config"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_about.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_cart-banner.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_cart-banner.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_hero.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_hero.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_list.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_news.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_news.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_shop-banner.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_shop-banner.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\scss\\sections\\_testimonials.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\scss\\sections\\_testimonials.scss"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\volt2.css",
+      "PackagePath": "staticwebassets\\assets\\css\\volt2.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\css\\volt2.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\volt2.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\Restaurantes\\res1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Restaurantes\\res1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\Restaurantes\\res2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Restaurantes\\res2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\Restaurantes\\res3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Restaurantes\\res3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\abt.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\abt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\avaters\\avatar1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avaters\\avatar1.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\avaters\\avatar2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avaters\\avatar2.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\avaters\\avatar3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avaters\\avatar3.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\breadcrumb-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\breadcrumb-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\company-logos\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\company-logos\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\company-logos\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\company-logos\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\company-logos\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\company-logos\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\company-logos\\4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\company-logos\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\company-logos\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\company-logos\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\dd.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\dd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\feature-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\hero-bg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero-bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\hero-bg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero-bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\homepage-bg-pattern.png",
+      "PackagePath": "staticwebassets\\assets\\img\\homepage-bg-pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\latest-news\\news-bg-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\latest-news\\news-bg-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\products\\product-img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\team\\team-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\team\\team-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\img\\team\\team-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\form-validate.js",
+      "PackagePath": "staticwebassets\\assets\\js\\form-validate.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\jquery-1.11.3.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-1.11.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\jquery.countdown.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.countdown.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\jquery.isotope-3.0.6.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.isotope-3.0.6.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\jquery.meanmenu.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.meanmenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\sticker.js",
+      "PackagePath": "staticwebassets\\assets\\js\\sticker.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\js\\waypoints.js",
+      "PackagePath": "staticwebassets\\assets\\js\\waypoints.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.eot_",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.eot_"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.eot_",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.eot_"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.eot_",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.eot_"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\assets\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\css\\bootstrap.min .css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min .css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\source\\repos\\Parcial 1\\Parcial 1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Parcial 1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Parcial 1.props",
+      "PackagePath": "build\\Parcial 1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Parcial 1.props",
+      "PackagePath": "buildMultiTargeting\\Parcial 1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Parcial 1.props",
+      "PackagePath": "buildTransitive\\Parcial 1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

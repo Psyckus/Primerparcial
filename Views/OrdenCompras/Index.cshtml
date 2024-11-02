@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Parcial_1.Models.OrdenCompra>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<!-- Formulario de búsqueda decimal? montoOrden, int? idEstadoOrden)-->
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group">
+        <input type="text" name="montoOrden" class="form-control" placeholder="montoOrden" />
+        <input type="text" name="idEstadoOrden" class="form-control" placeholder="idEstadoOrden" />
+    </div>
+    <button type="submit" class="btn btn-primary ml-2">Buscar</button>
+</form>
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Create New
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMetodoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdDireccionEnvio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMetodoEnvio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoOrden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEstadoOrden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaModificacion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMetodoPago)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdDireccionEnvio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMetodoEnvio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MontoOrden)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdEstadoOrden)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaCreacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaModificacion)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdOrdenCompra" class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-action="Details" asp-route-id="@item.IdOrdenCompra" class="btn btn-sm btn-info">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.IdOrdenCompra" class="btn btn-sm btn-danger">
+                        <i class="fas fa-trash-alt"></i> Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

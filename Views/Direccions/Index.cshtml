@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Parcial_1.Models.Direccion>
+
+@{
+    ViewData["Title"] = "Buscar Direcciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Buscar Direcciones</h1>
+
+<!-- Formulario de búsqueda -->
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group mr-2">
+        <input type="text" name="direccionExacta" class="form-control" placeholder="Dirección Exacta" />
+    </div>
+    <div class="form-group mr-2">
+        <input type="text" name="codigoPostal" class="form-control" placeholder="Código Postal" />
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Create New
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ProvinciaId)</th>
+            <th>@Html.DisplayNameFor(model => model.CantonId)</th>
+            <th>@Html.DisplayNameFor(model => model.DistritoId)</th>
+            <th>@Html.DisplayNameFor(model => model.DireccionExacta)</th>
+            <th>@Html.DisplayNameFor(model => model.CodigoPostal)</th>
+            <th>@Html.DisplayNameFor(model => model.PaisId)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaCreacion)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaModificacion)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ProvinciaId)</td>
+                <td>@Html.DisplayFor(modelItem => item.CantonId)</td>
+                <td>@Html.DisplayFor(modelItem => item.DistritoId)</td>
+                <td>@Html.DisplayFor(modelItem => item.DireccionExacta)</td>
+                <td>@Html.DisplayFor(modelItem => item.CodigoPostal)</td>
+                <td>@Html.DisplayFor(modelItem => item.PaisId)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaCreacion)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaModificacion)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                        <i class="fas fa-trash-alt"></i> Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

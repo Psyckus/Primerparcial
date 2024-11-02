@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVW_Proyecto_Mesas_Comida</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link href="~/assets/css/all.min.css" rel="stylesheet" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link href="~/assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- owl carousel -->
+
+	<link href="~/assets/css/owl.carousel.css" rel="stylesheet" />
+
+	<!-- magnific popup -->
+
+	<link href="~/assets/css/magnific-popup.css" rel="stylesheet" />
+	<!-- animate css -->
+
+	<link href="~/assets/css/animate.css" rel="stylesheet" />
+	<!-- mean menu css -->
+
+	<link href="~/assets/css/meanmenu.min.css" rel="stylesheet" />
+	<!-- main style -->
+
+	<link href="~/assets/css/main.css" rel="stylesheet" />
+	<!-- responsive -->
+
+    <link href="~/assets/css/responsive.css" rel="stylesheet" />
+  
+    <link href="~/assets/css/volt2.css" rel="stylesheet" />
+	<!-- SweetAlert CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link href="~/css/bootstrap.min .css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <partial name="_Menu.cshtml" />
+            @RenderBody()
+
+    <partial name="_Footer.cshtml" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="https://kit.fontawesome.com/67d992d243.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
