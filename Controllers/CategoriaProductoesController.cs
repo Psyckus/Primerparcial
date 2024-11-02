@@ -7,31 +7,41 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class CategoriaProductoesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly CategoriaProductoService _CategoriaProductoService;
 
-        public CategoriaProductoesController(AppDbContext context)
+        public CategoriaProductoesController(AppDbContext context, CategoriaProductoService categoriaProductoService)
         {
             _context = context;
+            _CategoriaProductoService = categoriaProductoService;
         }
 
         // GET: CategoriaProductoes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string nombreCategoria)
         {
-            var query = _context.CategoriasProducto.AsQueryable();
+            IEnumerable<CategoriaProducto> categoriasproducto;
 
-            if (!string.IsNullOrWhiteSpace(nombreCategoria))
+            if (!string.IsNullOrEmpty(nombreCategoria))
             {
-                query = query.Where(cp => EF.Functions.Like(cp.NombreCategoria, $"%{nombreCategoria}%"));
+                // Realiza la búsqueda mediante el servicio
+                categoriasproducto = await _CategoriaProductoService.BuscarCategoria(nombreCategoria);
             }
+            else
+            {
+                // Carga todos los datos si no se ha especificado un nombre
+                categoriasproducto = await _context.CategoriasProducto.ToListAsync();
 
-            var categorias = await query.ToListAsync();
-            return View(categorias);
+               
+            }
+            return View(categoriasproducto);
         }
 
 

@@ -7,33 +7,40 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
 
 namespace Parcial_1.Controllers
 {
     public class CaracteristicaProductoesController : Controller
     {
+        private readonly CaracteristicaProductoService _caracteristicaProductoService;
         private readonly AppDbContext _context;
 
-        public CaracteristicaProductoesController(AppDbContext context)
+        public CaracteristicaProductoesController(AppDbContext context, CaracteristicaProductoService caracteristicaProductoService)
         {
             _context = context;
+            _caracteristicaProductoService = caracteristicaProductoService;
         }
 
         // GET: CaracteristicaProductoes
-        // Controlador de vista (Controller)
+        [HttpGet]
         public async Task<IActionResult> Index(string nombre)
         {
-            var query = _context.CaracteristicasProducto.AsQueryable();
+            IEnumerable<CaracteristicaProducto> caracteristicas;
 
-            if (!string.IsNullOrWhiteSpace(nombre))
+            if (!string.IsNullOrEmpty(nombre))
             {
-                query = query.Where(cp => EF.Functions.Like(cp.Nombre, $"%{nombre}%"));
+                // Realiza la búsqueda mediante el servicio
+                caracteristicas = await _caracteristicaProductoService.BuscarCaracteristicaPorNombre(nombre);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado un nombre
+                caracteristicas = await _context.CaracteristicasProducto.ToListAsync();
             }
 
-            var caracteristicas = await query.ToListAsync();
             return View(caracteristicas);
         }
-
 
         // GET: CaracteristicaProductoes/Details/5
         public async Task<IActionResult> Details(int? id)

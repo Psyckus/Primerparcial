@@ -5,43 +5,45 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class MetodoPagoClientesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly MetodoPagoService _metodoPagoService;
 
-        public MetodoPagoClientesController(AppDbContext context)
+        public MetodoPagoClientesController(AppDbContext context, MetodoPagoService metodoPagoService)
         {
             _context = context;
+            _metodoPagoService = metodoPagoService;
         }
 
         // GET: MetodoPagoClientes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? proveedor, string? cuenta, DateTime? fechaExpira)
         {
-            var query = _context.MetodoPagoCliente.AsQueryable();
+            IEnumerable<MetodoPagoCliente> metodoPagoCliente;
 
-            if (!string.IsNullOrEmpty(proveedor))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(proveedor) || !string.IsNullOrEmpty(cuenta) || fechaExpira.HasValue)
             {
-                query = query.Where(mp => EF.Functions.Like(mp.NombreProveedor, $"%{proveedor}%"));
+                // Realiza la búsqueda mediante el servicio
+                metodoPagoCliente = await _metodoPagoService.BuscarMetodoPago(proveedor, cuenta, fechaExpira);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                metodoPagoCliente = await _context.MetodoPagoCliente.ToListAsync();
             }
 
-            if (!string.IsNullOrEmpty(cuenta))
-            {
-                query = query.Where(mp => EF.Functions.Like(mp.Cuenta, $"%{cuenta}%"));
-            }
-
-            if (fechaExpira.HasValue)
-            {
-                query = query.Where(mp => mp.FechaExpira.Date == fechaExpira.Value.Date);
-            }
-
-            var metodosPago = await query.ToListAsync();
-            return View(metodosPago);
+            return View(metodoPagoCliente);
+           
         }
 
 

@@ -271,3 +271,4 @@ C:\Users\jonat\source\repos\Parcial 1\Parcial 1\bin\Debug\net8.0\runtimes\win\li
 C:\Users\jonat\source\repos\Parcial 1\Parcial 1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\jonat\source\repos\Parcial 1\Parcial 1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jonat\source\repos\Parcial 1\Parcial 1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\jonat\source\repos\Parcial 1\Parcial 1\obj\Debug\net8.0\Parcial 1.sourcelink.json

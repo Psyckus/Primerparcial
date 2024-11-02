@@ -7,31 +7,44 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class EstadoOrdenComprasController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly EstadoOrdenService _estadoService;
 
-        public EstadoOrdenComprasController(AppDbContext context)
+        public EstadoOrdenComprasController(AppDbContext context, EstadoOrdenService estadoService)
         {
             _context = context;
+            _estadoService = estadoService;
         }
 
         // GET: EstadoOrdenCompras
    
         public async Task<IActionResult> Index(string estado)
         {
-            var query = _context.EstadosOrdenCompra.AsQueryable();
 
-            if (!string.IsNullOrWhiteSpace(estado))
+            IEnumerable<EstadoOrdenCompra> estadoOrden;
+
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(estado) )
             {
-                query = query.Where(e => e.Estado.Contains(estado));
+                // Realiza la búsqueda mediante el servicio
+                estadoOrden = await _estadoService.BuscarEstadoOrden(estado);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                estadoOrden = await _context.EstadosOrdenCompra.ToListAsync();
             }
 
-            var estadosOrdenCompra = await query.ToListAsync();
-            return View(estadosOrdenCompra);
+            return View(estadoOrden);
+      
+
         }
 
         // GET: EstadoOrdenCompras/Details/5

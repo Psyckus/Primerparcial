@@ -18,7 +18,7 @@ namespace Parcial_1.Controllers
 
 		// Método para buscar reseñas por valor de clasificación
 		[HttpGet("BuscarResenas")]
-		public async Task<ActionResult<IEnumerable<ResenaCliente>>> BuscarResenas([FromQuery] ResenaCliente request)
+		public async Task<ActionResult<IEnumerable<ResenaCliente>>> BuscarResenas(int? valorClasificacion)
 		{
 			// Validar el modelo
 			if (!ModelState.IsValid)
@@ -29,9 +29,9 @@ namespace Parcial_1.Controllers
 			var query = _context.ResenaCliente.AsQueryable();
 
 			// Verificar si el valor de clasificación es diferente de nulo
-			if (request.ValorClasificacion != null)
+			if (valorClasificacion != null)
 			{
-				query = query.Where(r => r.ValorClasificacion == request.ValorClasificacion);
+				query = query.Where(r => r.ValorClasificacion == valorClasificacion);
 			}
 
 			var reseñas = await query.ToListAsync();

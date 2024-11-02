@@ -19,7 +19,7 @@ namespace Parcial_1.Controllers
 
 		// Método para buscar países por nombre
 		[HttpGet("BuscarPaises")]
-		public async Task<ActionResult<IEnumerable<Pais>>> BuscarPaises([FromQuery] Pais request)
+		public async Task<ActionResult<IEnumerable<Pais>>> BuscarPaises(string nombre)
 		{
 			// Validar el modelo
 			if (!ModelState.IsValid)
@@ -29,9 +29,9 @@ namespace Parcial_1.Controllers
 
 			var query = _context.Paises.AsQueryable();
 
-			if (!string.IsNullOrWhiteSpace(request.Nombre))
+			if (!string.IsNullOrWhiteSpace(nombre))
 			{
-				query = query.Where(p => p.Nombre.Contains(request.Nombre));
+				query = query.Where(p => p.Nombre.Contains(nombre));
 			}
 
 			var paises = await query.ToListAsync();

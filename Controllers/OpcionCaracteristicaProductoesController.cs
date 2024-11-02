@@ -7,31 +7,41 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class OpcionCaracteristicaProductoesController : Controller
     {
         private readonly AppDbContext _context;
-
-        public OpcionCaracteristicaProductoesController(AppDbContext context)
+        private readonly OpcionCaracteristicaService _service;
+        public OpcionCaracteristicaProductoesController(AppDbContext context, OpcionCaracteristicaService service)
         {
             _context = context;
+            _service = service;
         }
 
         // GET: OpcionCaracteristicaProductoes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? valor)
         {
-            var query = _context.OpcionesCaracteristicaProducto.AsQueryable();
+            IEnumerable<OpcionCaracteristicaProducto> opcion;
 
+            // Verifica si al menos uno de los campos tiene un valor
             if (!string.IsNullOrEmpty(valor))
             {
-                query = query.Where(ocp => EF.Functions.Like(ocp.Valor, $"%{valor}%"));
+                // Realiza la búsqueda mediante el servicio
+                opcion = await _service.BuscarOpcionCaracteristica(valor);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                opcion = await _context.OpcionesCaracteristicaProducto.ToListAsync();
             }
 
-            var opciones = await query.ToListAsync();
-            return View(opciones);
+            return View(opcion);
+           
         }
 
 

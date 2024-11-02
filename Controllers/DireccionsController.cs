@@ -7,36 +7,41 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class DireccionsController : Controller
     {
         private readonly AppDbContext _context;
-
-        public DireccionsController(AppDbContext context)
+        private readonly DireccionService _direccionService;
+        public DireccionsController(AppDbContext context, DireccionService direccionService)
         {
             _context = context;
+            _direccionService = direccionService;
         }
 
         // GET: Direccions
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string direccionExacta, string codigoPostal)
         {
-            var query = _context.Direcciones.AsQueryable();
+            IEnumerable<Direccion> direccion;
 
-            if (!string.IsNullOrWhiteSpace(direccionExacta))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(direccionExacta) || !string.IsNullOrEmpty(codigoPostal))
             {
-                query = query.Where(d => d.DireccionExacta.Contains(direccionExacta));
+                // Realiza la búsqueda mediante el servicio
+                direccion = await _direccionService.BuscarDirecciones(direccionExacta, codigoPostal);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                direccion = await _context.Direcciones.ToListAsync();
             }
 
-            if (!string.IsNullOrWhiteSpace(codigoPostal))
-            {
-                query = query.Where(d => d.CodigoPostal.Contains(codigoPostal));
-            }
-
-            var direcciones = await query.ToListAsync();
-            return View(direcciones);
+            return View(direccion);
+          
         }
 
         // GET: Direccions/Details/5

@@ -19,7 +19,7 @@ namespace Parcial_1.Controllers
 	
 		// Método para buscar direcciones por dirección exacta o código postal
 		[HttpGet("BuscarDirecciones")]
-		public async Task<ActionResult<IEnumerable<Direccion>>> BuscarDirecciones([FromQuery] Direccion request)
+		public async Task<ActionResult<IEnumerable<Direccion>>> BuscarDirecciones(string direccionExacta, string codigoPostal)
 		{
 			// Validar el modelo
 			if (!ModelState.IsValid)
@@ -29,14 +29,14 @@ namespace Parcial_1.Controllers
 
 			var query = _context.Direcciones.AsQueryable();
 
-			if (!string.IsNullOrWhiteSpace(request.DireccionExacta))
+			if (!string.IsNullOrWhiteSpace(direccionExacta))
 			{
-				query = query.Where(d => d.DireccionExacta.Contains(request.DireccionExacta));
+				query = query.Where(d => d.DireccionExacta.Contains(direccionExacta));
 			}
 
-			if (!string.IsNullOrWhiteSpace(request.CodigoPostal))
+			if (!string.IsNullOrWhiteSpace(codigoPostal))
 			{
-				query = query.Where(d => d.CodigoPostal.Contains(request.CodigoPostal));
+				query = query.Where(d => d.CodigoPostal.Contains(codigoPostal));
 			}
 
 			var direcciones = await query.ToListAsync();

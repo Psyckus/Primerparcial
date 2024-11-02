@@ -5,38 +5,44 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class ItemOrdenComprasController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ItemOrdenService _itemOrdenService;
 
-        public ItemOrdenComprasController(AppDbContext context)
+        public ItemOrdenComprasController(AppDbContext context, ItemOrdenService itemOrdenService)
         {
             _context = context;
+            _itemOrdenService = itemOrdenService;
         }
 
         // GET: ItemOrdenCompras
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(int? cantidad, decimal? precio)
         {
-            var query = _context.ItemsOrdenCompra.AsQueryable();
+            IEnumerable<ItemOrdenCompra> itemOrden;
 
-            if (cantidad.HasValue)
+            // Verifica si al menos uno de los campos tiene un valor
+            if (cantidad.HasValue || precio.HasValue)
             {
-                query = query.Where(ioc => ioc.Cantidad == cantidad);
+                // Realiza la búsqueda mediante el servicio
+                itemOrden = await _itemOrdenService.BuscarItemOrden(cantidad, precio);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                itemOrden = await _context.ItemsOrdenCompra.ToListAsync();
             }
 
-            if (precio.HasValue)
-            {
-                query = query.Where(ioc => ioc.Precio == precio);
-            }
-
-            var itemsOrdenCompra = await query.ToListAsync();
-            return View(itemsOrdenCompra);
+            return View(itemOrden);
         }
 
 

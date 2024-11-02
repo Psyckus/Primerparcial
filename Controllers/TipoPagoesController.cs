@@ -7,31 +7,42 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class TipoPagoesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly TipoPagoService _tipoPagoService;
 
-        public TipoPagoesController(AppDbContext context)
+        public TipoPagoesController(AppDbContext context, TipoPagoService tipoPagoService)
         {
             _context = context;
+            _tipoPagoService = tipoPagoService;
         }
 
         // GET: TipoPagoes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? descripcion)
         {
-            var query = _context.TiposPago.AsQueryable();
+            IEnumerable<TipoPago> tipoPago;
 
+            // Verifica si al menos uno de los campos tiene un valor
             if (!string.IsNullOrEmpty(descripcion))
             {
-                query = query.Where(tp => EF.Functions.Like(tp.Descripcion, $"%{descripcion}%"));
+                // Realiza la búsqueda mediante el servicio
+                tipoPago = await _tipoPagoService.BuscarTipoPago(descripcion);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                tipoPago = await _context.TiposPago.ToListAsync();
             }
 
-            var tiposPago = await query.ToListAsync();
-            return View(tiposPago);
+            return View(tipoPago);
+          
         }
 
 

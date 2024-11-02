@@ -7,41 +7,42 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class ProductoesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ProductoService _productoService;
 
-        public ProductoesController(AppDbContext context)
+        public ProductoesController(AppDbContext context, ProductoService productoService)
         {
             _context = context;
+            _productoService = productoService;
         }
 
         // GET: Productoes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? nombreProducto, string? descripcion, string? urlImagen)
         {
-            var query = _context.Productos.AsQueryable();
+            IEnumerable<Producto> producto;
 
-            if (!string.IsNullOrEmpty(nombreProducto))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(nombreProducto) || !string.IsNullOrEmpty(descripcion) || !string.IsNullOrEmpty(urlImagen))
             {
-                query = query.Where(p => EF.Functions.Like(p.NombreProducto, $"%{nombreProducto}%"));
+                // Realiza la búsqueda mediante el servicio
+                producto = await _productoService.BuscarProductos(nombreProducto, descripcion, urlImagen);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                producto = await _context.Productos.ToListAsync();
             }
 
-            if (!string.IsNullOrEmpty(descripcion))
-            {
-                query = query.Where(p => EF.Functions.Like(p.Descripcion, $"%{descripcion}%"));
-            }
-
-            if (!string.IsNullOrEmpty(urlImagen))
-            {
-                query = query.Where(p => EF.Functions.Like(p.UrlImagen, $"%{urlImagen}%"));
-            }
-
-            var productos = await query.ToListAsync();
-            return View(productos);
+            return View(producto);
+          
         }
 
 

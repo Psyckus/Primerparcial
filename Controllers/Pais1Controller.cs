@@ -7,33 +7,39 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
 
 namespace Parcial_1.Controllers
 {
     public class Pais1Controller : Controller
     {
         private readonly AppDbContext _context;
-
-        public Pais1Controller(AppDbContext context)
+        private readonly PaisService _paisService;
+        public Pais1Controller(AppDbContext context, PaisService paisService)
         {
             _context = context;
+            _paisService = paisService;
         }
 
         // GET: Pais1
         public async Task<IActionResult> Index(string nombre)
         {
-            // Inicia la consulta con todos los países
-            var query = _context.Paises.AsQueryable();
+            IEnumerable<Pais> pais;
 
-            // Filtra si se proporciona un nombre
-            if (!string.IsNullOrWhiteSpace(nombre))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(nombre))
             {
-                query = query.Where(p => p.Nombre.Contains(nombre));
+                // Realiza la búsqueda mediante el servicio
+                pais = await _paisService.BuscarPaises(nombre);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                pais = await _context.Paises.ToListAsync();
             }
 
-            // Ejecuta la consulta y retorna la vista con los resultados
-            var paises = await query.ToListAsync();
-            return View(paises);
+            return View(pais);
+
         }
 
 

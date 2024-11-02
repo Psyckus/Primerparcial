@@ -7,38 +7,42 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class ItemProductoesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ItemProductoService _itemProductoService;
 
-        public ItemProductoesController(AppDbContext context)
+        public ItemProductoesController(AppDbContext context, ItemProductoService itemProductoService)
         {
             _context = context;
+            _itemProductoService = itemProductoService;
         }
 
         // GET: ItemProductoes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? codigoBarras, int? cantidadDisponible, string? urlImagen, decimal? precio)
         {
-            var query = _context.ItemsProducto.AsQueryable();
+            IEnumerable<ItemProducto> itemProductos;
 
-            if (!string.IsNullOrEmpty(codigoBarras))
-                query = query.Where(ip => EF.Functions.Like(ip.CodigoBarras, $"%{codigoBarras}%"));
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(codigoBarras) || cantidadDisponible.HasValue || !string.IsNullOrEmpty(urlImagen) || precio.HasValue)
+            {
+                // Realiza la búsqueda mediante el servicio
+                itemProductos = await _itemProductoService.BuscarItemProducto(codigoBarras, cantidadDisponible, urlImagen ,precio);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                itemProductos = await _context.ItemsProducto.ToListAsync();
+            }
 
-            if (cantidadDisponible.HasValue)
-                query = query.Where(ip => ip.CantidadDisponible == cantidadDisponible.Value);
-
-            if (!string.IsNullOrEmpty(urlImagen))
-                query = query.Where(ip => EF.Functions.Like(ip.UrlImagen, $"%{urlImagen}%"));
-
-            if (precio.HasValue)
-                query = query.Where(ip => ip.Precio == precio.Value);
-
-            var itemsProducto = await query.ToListAsync();
-            return View(itemsProducto);
+            return View(itemProductos);
+           
         }
 
 

@@ -7,46 +7,42 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class PromocionsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly PromocionService _promocionService;
 
-        public PromocionsController(AppDbContext context)
+        public PromocionsController(AppDbContext context, PromocionService promocionService)
         {
             _context = context;
+            _promocionService = promocionService;
         }
 
         // GET: Promocions
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? descripcion, int? porcentajeDescuento, DateTime? fechaInicia, DateTime? fechaFinaliza)
         {
-            var query = _context.Promociones.AsQueryable();
+            IEnumerable<Promocion> promocion;
 
-            if (!string.IsNullOrEmpty(descripcion))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(descripcion) || porcentajeDescuento.HasValue || fechaInicia.HasValue || fechaFinaliza.HasValue)
             {
-                query = query.Where(p => EF.Functions.Like(p.Descripcion, $"%{descripcion}%"));
+                // Realiza la búsqueda mediante el servicio
+                promocion = await _promocionService.BuscarPromocion(descripcion, porcentajeDescuento, fechaInicia, fechaFinaliza);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                promocion = await _context.Promociones.ToListAsync();
             }
 
-            if (porcentajeDescuento.HasValue)
-            {
-                query = query.Where(p => p.PorcentajeDescuento == porcentajeDescuento.Value);
-            }
-
-            if (fechaInicia.HasValue)
-            {
-                query = query.Where(p => p.FechaInicia.Date == fechaInicia.Value.Date);
-            }
-
-            if (fechaFinaliza.HasValue)
-            {
-                query = query.Where(p => p.FechaFinaliza.Date == fechaFinaliza.Value.Date);
-            }
-
-            var promociones = await query.ToListAsync();
-            return View(promociones);
+            return View(promocion);
+          
         }
 
 

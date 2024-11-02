@@ -7,42 +7,42 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
 
 namespace Parcial_1.Controllers
 {
     public class ClientesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ClienteService _clienteService;
 
-        public ClientesController(AppDbContext context)
+        public ClientesController(AppDbContext context, ClienteService clienteService)
         {
             _context = context;
+            _clienteService = clienteService;
         }
 
         // GET: Clientes
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string nombre, string apellidos, string correo)
         {
-            var query = _context.Clientes.AsQueryable();
+            IEnumerable<Cliente> clientes;
 
-            if (!string.IsNullOrWhiteSpace(nombre))
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(nombre) || !string.IsNullOrEmpty(apellidos) || !string.IsNullOrEmpty(correo))
             {
-                query = query.Where(c => c.NombreCompleto.Contains(nombre));
+                // Realiza la búsqueda mediante el servicio
+                clientes = await _clienteService.BuscarClientes(nombre, apellidos, correo);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                clientes = await _context.Clientes.ToListAsync();
             }
 
-            if (!string.IsNullOrWhiteSpace(apellidos))
-            {
-                query = query.Where(c => c.NombreCompleto.Contains(apellidos));
-            }
-
-            if (!string.IsNullOrWhiteSpace(correo))
-            {
-                query = query.Where(c => c.Correo.Contains(correo));
-            }
-
-            var clientes = await query.ToListAsync();
             return View(clientes);
         }
+
 
 
         // GET: Clientes/Details/5

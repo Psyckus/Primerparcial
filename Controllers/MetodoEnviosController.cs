@@ -7,22 +7,40 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
 
 namespace Parcial_1.Controllers
 {
     public class MetodoEnviosController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly MetodoEnvioService _metodoEnvioService;
 
-        public MetodoEnviosController(AppDbContext context)
+        public MetodoEnviosController(AppDbContext context, MetodoEnvioService metodoEnvioService)
         {
             _context = context;
+            _metodoEnvioService = metodoEnvioService;
         }
 
         // GET: MetodoEnvios
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(string? nombre, decimal? precio)
         {
+            IEnumerable<MetodoEnvio> metodoEnvio;
+
+            // Verifica si al menos uno de los campos tiene un valor
+            if (!string.IsNullOrEmpty(nombre) || precio.HasValue)
+            {
+                // Realiza la búsqueda mediante el servicio
+                metodoEnvio = await _metodoEnvioService.BuscarMetodoEnvio(nombre, precio);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                metodoEnvio = await _context.MetodosEnvio.ToListAsync();
+            }
+
+            return View(metodoEnvio);
             var query = _context.MetodosEnvio.AsQueryable();
 
             if (!string.IsNullOrEmpty(nombre))

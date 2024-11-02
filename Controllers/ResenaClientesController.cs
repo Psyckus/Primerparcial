@@ -7,23 +7,41 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class ResenaClientesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ResenaService _resenaService;
 
-        public ResenaClientesController(AppDbContext context)
+        public ResenaClientesController(AppDbContext context, ResenaService resenaService)
         {
             _context = context;
+            _resenaService = resenaService;
         }
 
         // GET: ResenaClientes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? valorClasificacion)
         {
-            var appDbContext = _context.ResenaCliente.Include(r => r.Cliente).Include(r => r.Producto);
-            return View(await appDbContext.ToListAsync());
+            IEnumerable<ResenaCliente> resena;
+
+            // Verifica si al menos uno de los campos tiene un valor
+            if (valorClasificacion.HasValue)
+            {
+                // Realiza la búsqueda mediante el servicio
+                resena = await _resenaService.BuscarResenas(valorClasificacion);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                resena = await _context.ResenaCliente.ToListAsync();
+            }
+
+            return View(resena);
+     
         }
 
         // GET: ResenaClientes/Details/5

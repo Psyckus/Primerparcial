@@ -7,36 +7,43 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parcial_1.Data;
 using Parcial_1.Models;
+using Parcial_1.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parcial_1.Controllers
 {
     public class OrdenComprasController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly OrdenCompraService _ordenCompraService;
 
-        public OrdenComprasController(AppDbContext context)
+        public OrdenComprasController(AppDbContext context, OrdenCompraService ordenCompraService)
         {
             _context = context;
+            _ordenCompraService = ordenCompraService;
         }
 
         // GET: OrdenCompras
         // Controlador de vista (Controller)
         public async Task<IActionResult> Index(decimal? montoOrden, int? idEstadoOrden)
         {
-            var query = _context.OrdenesCompra.AsQueryable();
+            IEnumerable<OrdenCompra> ordenCompra;
 
-            if (montoOrden != null)
+            // Verifica si al menos uno de los campos tiene un valor
+            if (montoOrden.HasValue || idEstadoOrden.HasValue)
             {
-                query = query.Where(oc => oc.MontoOrden == montoOrden);
+                // Realiza la búsqueda mediante el servicio
+                ordenCompra = await _ordenCompraService.BuscarOrdenCompra(montoOrden, idEstadoOrden);
+            }
+            else
+            {
+                // Carga todos los datos si no se ha especificado ningún valor
+                ordenCompra = await _context.OrdenesCompra.ToListAsync();
             }
 
-            if (idEstadoOrden != null)
-            {
-                query = query.Where(oc => oc.IdEstadoOrden == idEstadoOrden);
-            }
+            return View(ordenCompra);
+       
 
-            var ordenes = await query.ToListAsync();
-            return View(ordenes);
         }
 
 
